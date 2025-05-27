@@ -1,0 +1,36 @@
+{
+  "name": "kolmeya/parallel",
+  "description": "Sub process manager for PHP",
+  "keywords": [
+    "process manager",
+    "PHP Multithreading"
+  ],
+  "authors": [
+    {
+      "name": "Junior Santos",
+      "email": "juhnior@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "type": "package",
+  "require": {
+    "php": ">=7.4",
+    "ext-pcntl": "*",
+    "ext-posix": "*"
+  },
+  "require-dev": {
+    "pestphp/pest": "^1.23",
+    "friendsofphp/php-cs-fixer": "^3.75",
+    "pestphp/pest-plugin-parallel": "^1.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Kolmeya\\Parallel\\": "./src"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
+}
